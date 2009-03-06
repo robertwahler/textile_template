@@ -1,0 +1,11 @@
+TextileTemplate
+==============
+
+This plugin allows you to use view files in textile with erb
+Name your views like this: index.html.textile
+
+Requires RedCloth gem
+
+Based on a code pattern presented by Gabriel Laskar in the Maruku template plugin located at git://github.com/bibiskuk/maruku_template.git
+
+Copyright (c) 2008 GearheadForHire.com, LLC, released under the MIT license
