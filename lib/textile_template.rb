@@ -3,7 +3,7 @@ module ActionView
     class TextileTemplate < ERB
       def compile(template)
         src = super
-        "_textile_proc = proc {\n#{src}\n}; RedCloth.new(_textile_proc.call).to_html"
+        "_textile_proc = proc {\n#{src}\n}; RedCloth.new(_textile_proc.call, [:hard_breaks]).to_html"
       end
  
       def cache_fragment(block, name = {}, options = nil) #:nodoc:
@@ -20,4 +20,12 @@ module ActionView
   end
 
   Template.register_template_handler :textile, TemplateHandlers::TextileTemplate 
+
+  module VERSION #nodoc
+    MAJOR = 0
+    MINOR = 1
+    TINY = 0
+    STRING = [MAJOR, MINOR, TINY].join('.')
+  end
+
 end
