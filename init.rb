@@ -1,1 +1,1 @@
-ActionView::Template.register_template_handler :textile, TextileTemplate 
+require 'textile_template'
