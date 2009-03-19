@@ -1,0 +1,6 @@
+h1. Main Heading
+
+<%- @erb = "some_erb" -%>
+h2. <%= "This is #{@erb.humanize}" %>
+
+this is *strong*
