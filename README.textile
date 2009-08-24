@@ -1,6 +1,7 @@
 h2. TextileTemplate
 
-This plugin allows you to use view files in textile with erb
+This plugin allows you to use Rails view files written in textile with ERB
+
 Name your views like this: index.html.textile
 
 Tested under Rails 2.3
